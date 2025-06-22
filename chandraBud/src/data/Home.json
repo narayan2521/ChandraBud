@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Empowering Students & Businesses",
+    "subtitle": "Connecting talent with opportunity through internships, services, and collaborations.",
+    "cta": "Get Started",
+    "image": "/assets/hero.jpg"
+  },
+  "coreServices": {
+    "title": "Our Core Services",
+    "description": "We offer a wide range of services designed to meet the diverse needs of our clients. Our team of experts is committed to delivering exceptional results.",
+    "items": [
+      { "title": "Consulting", "desc": "Strategic guidance and expert advice to optimize your business processes." },
+      { "title": "Project Management", "desc": "Efficient planning, execution, and monitoring of projects for success." },
+      { "title": "Team Augmentation", "desc": "Access skilled professionals to enhance your team’s capabilities." }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "sections": [
+      {
+        "category": "Internships",
+        "items": [
+          { "title": "Front-end Development Internship", "desc": "Hands-on experience in front-end dev with real-world projects." },
+          { "title": "Back-end Development Internship", "desc": "Master server-side logic, databases, and APIs with guidance." }
+        ]
+      },
+      {
+        "category": "Web Projects",
+        "items": [
+          { "title": "E-commerce Website Development", "desc": "Build robust online stores with modern features." },
+          { "title": "Corporate Website Design", "desc": "Professional web presence that reflects your brand." },
+          { "title": "Personal Portfolio Websites", "desc": "Showcase your work and attract opportunities." }
+        ]
+      },
+      {
+        "category": "Photo & Videography",
+        "items": [
+          { "title": "Event Photography", "desc": "Capture your moments professionally and beautifully." },
+          { "title": "Product Photography", "desc": "High-quality visuals to boost product appeal." },
+          { "title": "Corporate Videography", "desc": "Create engaging business videos for any purpose." }
+        ]
+      },
+      {
+        "category": "Video Editing",
+        "items": [
+          { "title": "Promotional Video Editing", "desc": "Compelling edits that drive your brand forward." },
+          { "title": "Event Video Editing", "desc": "Polished highlights of your special events." }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "desc": "At Chandrabud, we're more than just a service provider—we’re your strategic partner in navigating the modern business landscape. Our journey began with a simple yet profound vision: to empower businesses with innovative solutions.",
+    "mission": "To be the catalyst for your business transformation by delivering tailored solutions and unlocking new opportunities.",
+    "values": [
+      "Customer-Centric: We put clients first.",
+      "Innovation: We embrace creativity and progress.",
+      "Integrity: We operate with transparency and ethics.",
+      "Collaboration: We achieve more, together."
+    ]
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "members": [
+      { "name": "Rudrapratap Mahato", "role": "Founder & CEO" },
+      { "name": "Dipak Sahoo", "role": "Co-Founder & Director" },
+      { "name": "Shubrajit Giri", "role": "Head of Sales & Marketing" },
+      { "name": "Laxmipriya Mahapatra", "role": "Head of HR" }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "desc": "Whether you have a question, need a custom quote, or just want to chat, we’d love to hear from you."
+  }
+}
