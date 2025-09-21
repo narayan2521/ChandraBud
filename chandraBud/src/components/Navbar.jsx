@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from '../assets/chandrabud-logo.png'
+import '../styles/navbar.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,12 +18,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 nav-container">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-xl font-bold text-purple-700">
-            <Link to="/">ChandraBud</Link>
+            <Link to="/"><img src={logo} alt="logo" style={{
+              height:"50px"
+            }} /></Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -46,10 +50,10 @@ const Navbar = () => {
               </li>
               <li>
                 <Link 
-                  to="/internships" 
+                  to="/contact-us" 
                   className="hover:text-purple-600 transition-colors duration-200"
                 >
-                  Internships
+                  Contact
                 </Link>
               </li>
               <li>
@@ -80,15 +84,15 @@ const Navbar = () => {
                   ></path>
                 </svg>
                 <a 
-                  href="tel:+1234567890" 
+                  href="tel:+91 8757304353" 
                   className="text-gray-700 hover:text-purple-600 transition-colors duration-200"
                 >
-                  +1 (234) 567-890
+                  +91 8757304353
                 </a>
               </div>
 
               {/* Language Selector */}
-              <div className="relative">
+              {/* <div className="relative">
                 <button 
                   onClick={toggleLanguage}
                   className="flex items-center gap-1 text-gray-700 hover:text-purple-600 transition-colors duration-200"
@@ -133,7 +137,7 @@ const Navbar = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </div> */}
             </div>
           </div>
 

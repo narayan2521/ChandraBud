@@ -1,1 +1,9 @@
  @import "tailwindcss";
+
+ .contianer-padding{
+    padding-left:5% !important;
+     padding-right:5% !important;
+ }
+ .footer-container{
+    padding: 3% 3%;
+ }

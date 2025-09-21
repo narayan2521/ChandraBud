@@ -3,17 +3,17 @@
     "title": "Empowering Students & Businesses",
     "subtitle": "Connecting talent with opportunity through internships, services, and collaborations.",
     "cta": "Get Started",
-    "image": "/assets/hero.jpg"
+    "image": "HeroImage.jpg"
   },
-  "coreServices": {
-    "title": "Our Core Services",
-    "description": "We offer a wide range of services designed to meet the diverse needs of our clients. Our team of experts is committed to delivering exceptional results.",
-    "items": [
-      { "title": "Consulting", "desc": "Strategic guidance and expert advice to optimize your business processes." },
-      { "title": "Project Management", "desc": "Efficient planning, execution, and monitoring of projects for success." },
-      { "title": "Team Augmentation", "desc": "Access skilled professionals to enhance your team’s capabilities." }
-    ]
-  },
+ "coreServices": {
+  "title": "Our Core Services",
+  "description": "We offer a wide range of services designed to meet the diverse needs of our clients. Our team of experts is committed to delivering exceptional results.",
+  "items": [
+    { "title": "Project Management", "desc": "Efficient planning, execution, and monitoring of projects for success." },
+    { "title": "Digital Marketing", "desc": "Boost your brand visibility and engagement through tailored online marketing strategies." },
+    { "title": "Web Application Development", "desc": "Custom web applications built to deliver seamless user experiences and business growth." }
+  ]
+},
   "services": {
     "title": "Our Services",
     "sections": [
@@ -64,7 +64,7 @@
     "title": "Meet Our Team",
     "members": [
       { "name": "Rudrapratap Mahato", "role": "Founder & CEO" },
-      { "name": "Dipak Sahoo", "role": "Co-Founder & Director" },
+      { "name": "Narayan Prasad Mohanty", "role": "Co-Founder & Director" },
       { "name": "Shubrajit Giri", "role": "Head of Sales & Marketing" },
       { "name": "Laxmipriya Mahapatra", "role": "Head of HR" }
     ]
