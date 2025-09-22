@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from '../assets/chandrabud-logo.png'
+import logo from '../assets/chandrabud-logo-removebg.png'
 import '../styles/navbar.css'
 
 const Navbar = () => {
@@ -23,10 +23,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-xl font-bold text-purple-700">
-            <Link to="/">aa
-            {/* <img src={logo} alt="logo" style={{
+            <Link to="/"> 
+            <img src={logo} alt="logo" style={{
               height:"50px"
-            }} /> */}
+            }} />
             </Link>
           </div>
 
