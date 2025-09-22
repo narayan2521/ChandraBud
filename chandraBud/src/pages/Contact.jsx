@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Banner from "../components/Banner";
 
 const Contact = () => {
+
+   useEffect(() =>{
+         window.scrollTo(0, 0)
+     },[])
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -75,6 +81,13 @@ const Contact = () => {
   ];
 
   return (
+
+     <>
+     <Banner 
+        title="Contact Us" 
+        subtitle="We’d love to hear from you. Let’s connect!" 
+        background="https://source.unsplash.com/1600x600/?contact,office"
+      />
     <div className="min-h-screen bg-gray-50 pt-24 pb-16 contianer-padding">
       <div className="container mx-auto px-6">
         {/* Header */}
@@ -268,6 +281,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
+     </>
   );
 };
 

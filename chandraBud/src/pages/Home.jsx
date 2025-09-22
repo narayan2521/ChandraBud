@@ -405,7 +405,7 @@
 // export default Home;
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import data from "../data/Home.json";
 import HeroImg from '../assets/HeroImage.jpg'
@@ -432,6 +432,10 @@ const fadeIn = {
 };
 
 const Home = () => {
+   useEffect(() =>{
+         window.scrollTo(0, 0)
+     },[])
+
   const { hero, coreServices, services, about, team, contact } = data;
   const [activeService, setActiveService] = useState(0);
   const [email, setEmail] = useState("");

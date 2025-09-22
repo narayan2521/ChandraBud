@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
 
 const About = () => {
+   useEffect(() =>{
+       window.scrollTo(0, 0)
+   },[])
+
   const teamMembers = [
     {
       name: "Rudrapratap Mahato",
@@ -54,14 +59,19 @@ const About = () => {
   ];
 
   const stats = [
-    { number: "200+", label: "Projects Completed" },
-    { number: "98%", label: "Client Satisfaction" },
+    { number: "20+", label: "Projects Completed" },
+    { number: "90%", label: "Client Satisfaction" },
     { number: "50+", label: "Students Trained" },
-    { number: "15+", label: "Industry Partners" }
+    { number: "5+", label: "Industry Partners" }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24 pb-16 contianer-padding">
+    <>
+    <Banner 
+        title="About Us" 
+        subtitle="Learn more about our mission, values, and journey."  
+      />
+     <div className="min-h-screen bg-gray-50 pt-24 pb-16 contianer-padding">
       <div className="container mx-auto px-6">
         {/* Hero Section */}
         <section className="mb-20">
@@ -89,11 +99,11 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl overflow-hidden shadow-xl">
+              <div className="bg-gradient-to-br   rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                   alt="Team collaboration" 
-                  className="w-full h-80 object-cover mix-blend-overlay opacity-90"
+                  className="w-full h-80 object-cover  opacity-90"
                 />
               </div>
             </motion.div>
@@ -230,6 +240,8 @@ const About = () => {
         </motion.div>
       </div>
     </div>
+    </>
+   
   );
 };
 

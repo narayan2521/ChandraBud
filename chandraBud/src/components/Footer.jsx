@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from '../assets/chandrabud-logo.png'
+import logo from '../assets/chandrabud-logo-removebg.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -103,7 +103,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Support</h3>
             <ul className="space-y-3">
-              {footerLinks.support.map((link, index) => (
+              {/* {footerLinks.support.map((link, index) => (
                 <li key={index}>
                   <Link 
                     to={link.path} 
@@ -112,7 +112,10 @@ const Footer = () => {
                     {link.name}
                   </Link>
                 </li>
-              ))}
+              ))} */}
+               <a href="mailto:example@gmail.com"  className="text-gray-400 hover:text-white transition-colors duration-300">
+                    Email : example@gmail.com
+                  </a>
             </ul>
           </div>
         </div>

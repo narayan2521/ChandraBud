@@ -23,9 +23,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-xl font-bold text-purple-700">
-            <Link to="/"><img src={logo} alt="logo" style={{
+            <Link to="/">aa
+            {/* <img src={logo} alt="logo" style={{
               height:"50px"
-            }} /></Link>
+            }} /> */}
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -50,7 +52,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link 
-                  to="/contact-us" 
+                  to="/contact" 
                   className="hover:text-purple-600 transition-colors duration-200"
                 >
                   Contact

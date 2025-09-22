@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact-us" element={<Contact />} />
-        {/* Define other routes here */}
+        <Route path="/contact" element={<Contact />} />
+         
+          {/* Catch-all for undefined routes */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

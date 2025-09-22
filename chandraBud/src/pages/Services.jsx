@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
 
 const Services = () => {
+
+   useEffect(() =>{
+         window.scrollTo(0, 0)
+     },[])
+
   const [activeCategory, setActiveCategory] = useState(0);
   
   const servicesData = {
@@ -103,7 +109,13 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24 pb-16 contianer-padding">
+   <>
+     <Banner 
+        title="Our Services" 
+        subtitle="Explore the wide range of solutions we offer." 
+        background="https://source.unsplash.com/1600x600/?technology,services"
+      />
+     <div className="min-h-screen bg-gray-50 pt-24 pb-16 contianer-padding">
       <div className="container mx-auto px-6">
         {/* Header */}
         <motion.div 
@@ -207,6 +219,7 @@ const Services = () => {
         </motion.div>
       </div>
     </div>
+   </>
   );
 };
 
